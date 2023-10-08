@@ -73,7 +73,7 @@ function generate() {
     console.log(jsonData); 
     for (let i = 0; i < jsonData.length; i++) {
         const element = jsonData[i];
-        firestore.collection('/Portfolio').add({
+        firestore.collection('/portfolio').add({
             "id": element.id,
             "title": element.title,
             "description": element.description,
@@ -86,8 +86,6 @@ function generate() {
         }).catch((error) => {
             console.error(error);
         });
-    
-    
     }
 
 }
