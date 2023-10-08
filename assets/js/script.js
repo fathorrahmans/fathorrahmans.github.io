@@ -1,6 +1,6 @@
 const d = new Date();
 let year = d.getFullYear();
-document.getElementById("demo").innerHTML = "© "+year+". All rights reserved by zaiidleader.";
+document.getElementById("demo").innerHTML = "© "+year+". All rights reserved by Fathor Rahman.";
 
 const firestore = firebase.firestore();
 let myPortfolio = document.getElementById("myPortfolio")
