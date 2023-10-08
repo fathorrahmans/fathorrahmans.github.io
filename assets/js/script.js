@@ -21,8 +21,7 @@ firestore.collection('/portfolio').onSnapshot((querySnapshot) => {
                     data-images_url="`+realtimePortfolio[i].value.images_url+`"
                     data-title="`+realtimePortfolio[i].value.title+`"
                     data-description="`+realtimePortfolio[i].value.description+`"
-                    data-playstore="`+realtimePortfolio[i].value.playstore_link+`"
-                    data-appstore="`+realtimePortfolio[i].value.appstore_link+`"
+                    data-link="`+realtimePortfolio[i].value.link+`"
                     data-bs-target="#exampleModalCenter"
                 >
                     <div class="inner">
@@ -50,18 +49,15 @@ firestore.collection('/portfolio').onSnapshot((querySnapshot) => {
         var images_url = $(e.relatedTarget).data('images_url');
         var title = $(e.relatedTarget).data('title');
         var description = $(e.relatedTarget).data('description');
-        var playstore = $(e.relatedTarget).data('playstore');
-        var appstore = $(e.relatedTarget).data('appstore');
+        var link = $(e.relatedTarget).data('link');
         
         document.getElementById("modalTitle").innerHTML = '<span>'+type+'</span> ' + title
         document.getElementById("modalImage").src = images_url
         document.getElementById("description").innerHTML = description
 
-        document.getElementById("modalPlaystore").href = playstore
-        document.getElementById("modalAppstore").href = appstore
+        document.getElementById("modalLink").href = link
 
-        document.getElementById("modalPlaystore").style.visibility = playstore === '' ? 'hidden' : 'visible'
-        document.getElementById("modalAppstore").style.visibility = appstore === '' ? 'hidden' : 'visible'
+        document.getElementById("modalLink").style.visibility = link === '' ? 'hidden' : 'visible'
         
     });
 })
