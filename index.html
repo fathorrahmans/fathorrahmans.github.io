@@ -1,476 +1,531 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fathor Rahman S.Tr.Kom</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- CSS
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <title>Fath</title>
+    <!-- Firebase library -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script>
+        const firebaseConfig = {
+            // apiKey: "AIzaSyA1csKxGncLxyIRW7JPp737SBey3-NlZdo",
+            // authDomain: "portfolio-9b0ca.firebaseapp.com",
+            // projectId: "portfolio-9b0ca",
+            // storageBucket: "portfolio-9b0ca.appspot.com",
+            // messagingSenderId: "253421381483",
+            // appId: "1:253421381483:web:ad3bbf61cab8b4f8060e2e",
+            // measurementId: "G-JG3EMFK67R",
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+            apiKey: "AIzaSyDGQoH8Sqca3s5CGxIc9VEp-PB5JoE4oaY",
+            authDomain: "fath-portfolio.firebaseapp.com",
+            projectId: "fath-portfolio",
+            storageBucket: "fath-portfolio.appspot.com",
+            messagingSenderId: "862837427591",
+            appId: "1:862837427591:web:17dca1d96c4d2e99ec9722"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-        <link rel="stylesheet" href="css/magnific-popup.css">
+<body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
 
-        <link href="css/aos.css" rel="stylesheet">
-
-        <link href="css/templatemo-nomad-force.css" rel="stylesheet">
-<!--
-
-TemplateMo 567 Nomad Force
-
-https://templatemo.com/tm-567-nomad-force
-
--->
-    </head>
-    
-    <body>
-    
-        <main>
-
-            <section class="hero" id="hero">
-                <div class="heroText">
-                    <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
-                        Fathor Rahman
-                    </h1>
-
-                    <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
-                        my portfolio info <strong class="custom-underline">website</strong>
-                    </p>
+    <!-- Start Header -->
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+            <!-- Start Header Left -->
+            <div class="col-lg-2 col-6">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo/logo.png" alt="logo">
+                        </a>
+                    </div>
                 </div>
-
-                <div class="videoWrapper">
-                    <!-- <video autoplay="" loop="" muted="" class="custom-video" poster="videos/792bd98f3e617786c850493560e11c45.jpg">
-                        <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
-
-                        Your browser does not support the video tag.
-                    </video> -->
-                    <img src="images/banner/foto.jpg" alt="banner" width="100%">
-                </div>
-
-                <div class="overlay"></div>
-            </section>
-
-            <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <strong>Fathor Rahman</strong>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#hero">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#profile">Profile</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#news">Galeri</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact Us</a>
-                            </li>
+            </div>
+            <!-- End Header Left -->
+            <!-- Start Header Center -->
+            <div class="col-lg-10 col-6">
+                <div class="header-center">
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
+                        <!-- Start Mainmanu Nav -->
+                        <ul class="primary-menu nav nav-pills">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
                         </ul>
+                        <!-- End Mainmanu Nav -->
+                    </nav>
+                    <!-- Start Header Right  -->
+                    <div class="header-right">
+                        <a class="rn-btn" target="_blank" href="cv.pdf"><span>MY RESUME</span></a>
+                        <div class="hamberger-menu d-block d-xl-none">
+                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                        </div>
+                        <div class="close-menu d-block">
+                            <span class="closeTrigger">
+                                <i data-feather="x"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- End Header Right  -->
+                </div>
+            </div>
+            <!-- End Header Center -->
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a class="logo" href="index.html">
+                        <img src="assets/images/logo/logos-circle.png" alt="Personal Portfolio" style="max-width: 25%;">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
                     </div>
                 </div>
-            </nav>
+                <p class="discription">"Empowering Dreams, Coding the Future" - The Motto of a Trailblazing Programmer.
+                </p>
+            </div>
+            <div class="content">
+                <ul class="primary-menu nav nav-pills onepagenav">
+                    <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
+                </ul>
+                <!-- social sharea area -->
+                <div class="social-share-style-1 mt--40">
+                    <span class="title">find with me</span>
+                    <ul class="social-share d-flex liststyle">
+                        <li class="facebook"><a href="https://www.facebook.com/zAii.dLeader" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg></a>
+                        </li>
+                        <li class="instagram"><a href="https://www.instagram.com/zaiidleader/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg></a>
+                        </li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/zaiidleader/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
 
-            <section class="section-padding pb-0" id="profile">
-                <div class="container mb-5 pb-lg-5">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="mb-3" data-aos="fade-up">Tentang Saya</h2>
-                        </div>
 
-                        <div class="col-lg-12 col-12 mt-3 mb-lg-5">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      info
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p class="me-4" data-aos="fade-up" data-aos-delay="300">Assalamualaikum wr wr. saya Fathor Rahman adalah seorang mahasiswa dari Politeknik Negeri Jember. Asal saya adalah Kabupaten Probolinggo - Jawa Timur. 
-                                            <br><br>Saya tertarik dengan dunia IT sejak bersekolah di SMK Negeri 2 Kraksaan, disana saya mengambil Jurusan Rekayasa Perangkat Lunak.
-                                        </p>
-                                        <p data-aos="fade-up" data-aos-delay="500">Karena saya sudah mempunyai basic di SMK maka saya melanjutkannya di kuliah
-                                            saya dengan mengambil jurusan Teknologi Informasi dengan prodi Teknik Informatika.
-                                            <br><br>Saya sangat menyukai bidang ini, bidang ini begitu menarik, kadang bikin mumet, kadang bikin bahagia ketika
-                                            telah menyelesaikan error dari sebuah perkodingan, hal itu yang membuat saya tambah semangat dan merasa tertantang
-                                            menaklukkan perkodingan.
+
+
+    <main class="main-page-wrapper">
+
+        <!-- Start Slider Area -->
+        <div id="home" class="rn-slider-area">
+            <div class="slide slider-style-1">
+                <div class="container">
+                    <div class="row row--30 align-items-center">
+                        <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
+                            <div class="content">
+                                <div class="inner">
+                                    <span class="subtitle">Hi there! 👋</span>
+                                    <h1 class="title">I’m <span>Fathor Rahman</span><br>
+                                        <span class="header-caption" id="page-top">
+                                            <!-- type headline start-->
+                                            <span class="cd-headline clip is-full-width">
+                                                <span>a </span>
+                                                <!-- ROTATING TEXT -->
+                                                <span class="cd-words-wrapper">
+                                                    <b class="is-visible">Software Engineer</b>
+                                                    <b class="is-hidden">Backend Programmer</b>
+                                                </span>
+                                            </span>
+                                            <!-- type headline end -->
+                                        </span>
+                                    </h1>
+
+                                    <div>
+                                        <p class="description">I am a software engineer, and I focus on Laravel, a
+                                            widely-used framework for developing website applications.
+                                            <br><br>
+                                            With one years of experience in website application development using
+                                            Laravel, I understand the challenges of finding high-quality and efficient
+                                            resources when I first started learning. That's why I decided to create
+                                            website applications using the PHP programming language with the Laravel framework.
+                                            <br><br>
+                                            I grew up in the city of Probolinggo, passionate about the latest technology, 
+                                            and I look forward to becoming your partner! 👨🏻‍💻
                                         </p>
                                     </div>
-                                  </div>
                                 </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Pendidikan
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                <th scope="col"> No</th>
-                                                <th scope="col"> Nama Sekolah</th>
-                                                <th scope="col"> Jurusan</th>
-                                                <th scope="col"> Tahun</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row"> 1</th>
-                                                    <td> SD Negeri Kecik 1</td>
-                                                    <td>-</td>
-                                                    <td> 2007-2013</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"> 2</th>
-                                                    <td> SMP Negeri 1 Kraksaan</td>
-                                                    <td>-</td>
-                                                    <td> 2013-2016</td>
-                                                </tr>
-                                                <tr>
-                                                    <td scope="row"> 3</td>
-                                                    <td> SMK Negeri 2 Kraksaan</td>
-                                                    <td> Rekayasa Perangkat Lunak</td>
-                                                    <td> 2016-2019</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                                        <div class="social-share-inner-left">
+                                            <span class="title">find with me</span>
+                                            <ul class="social-share d-flex liststyle">
+                                                <li class="facebook"><a href="https://www.facebook.com/fathor.rahman.23/"
+                                                        target="_blank"><i data-feather="facebook"></i></a>
+                                                </li>
+                                                <li class="instagram"><a href="https://www.instagram.com/ohfath_/"
+                                                        target="_blank"><i data-feather="instagram"></i></a>
+                                                </li>
+                                                <li class="linkedin"><a href="https://www.linkedin.com/in/fathor-rahman/"
+                                                        target="_blank"><i data-feather="linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                  </div>
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
+                                        <div class="skill-share-inner">
+                                            <span class="title">best skill on</span>
+                                            <ul class="skill-share d-flex liststyle">
+                                                <li><img src="assets/images/icons/icons-01.png" alt="React Native"></li>
+                                                <li><img src="assets/images/icons/icons-02.png" alt="Java"></li>
+                                                <li><img src="assets/images/icons/icons-03.png" alt="PHP"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            
+                            </div>
                         </div>
 
-
-                    </div>
-                </div>
-
-               
-                  
-            </section>
-
-            <section class="section-padding" id="portfolio">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="mb-5 text-center" data-aos="fade-up">Portfolio</h2>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="portfolio-thumb" data-aos="fade-up">
-                                <a href="images/portfolio/ponkop.png" class="image-popup">
-                                    <img src="images/portfolio/ponkop.png" class="img-fluid portfolio-image" alt="">
-                                </a>
-                                <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Pondok Kopi</h4>
-
-                                    <p class="text-danger">Website</p>
+                        <div class="order-1 order-lg-2 col-lg-5">
+                            <div class="thumbnail">
+                                <div class="inner">
+                                    <img src="assets/images/slider/banner-01.png" alt="Personal Portfolio Images">
                                 </div>
-                            </div> 
-                        </div>
-                        
-                        <div class="col-lg-4 col-12">
-                            <div class="portfolio-thumb" data-aos="fade-up">
-                                <a href="images/portfolio/android.jpg" class="image-popup">
-                                    <img src="images/portfolio/android.jpg" class="img-fluid portfolio-image" alt="">
-                                </a>
-                                
-                                <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Pondok Kopi</h4>
-                                    <p class="text-info">Android</p>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="portfolio-thumb mb-5" data-aos="fade-up">
-                                <a href="images/portfolio/iot.jpg" class="image-popup">
-                                    <img src="images/portfolio/iot.jpg" class="img-fluid portfolio-image" alt="">
-                                </a>
-                                <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Penyiraman Otomatis Kumbung Jamur</h4>
-
-                                    <p class="text-danger">Basis IoT</p>
-                                </div>
-                            </div> 
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="news section-padding" id="news">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="mb-5 text-center" data-aos="fade-up">Galeri Foto</h2>
-                        </div>
-
-                        <div class="col-lg-3 col-12">
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100">
-                                    
-                                    <a href="https://aws-images-prod.sindonews.net/dyn/600/pena/sindo-article/original/2021/11/28/langka3%20red_panda.jpg" class="news-image-hover news-image-hover-primary">
-                                        <img src="https://aws-images-prod.sindonews.net/dyn/600/pena/sindo-article/original/2021/11/28/langka3%20red_panda.jpg" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-primary text-white">Hewan</div>
-                                </div>
-                            </div> 
-
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100" data-aos="fade-up">
-                                    
-                                    <a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAQuV3k.img?h=0&w=600&m=6&q=60&u=t&o=f&l=f" class="news-image-hover news-image-hover-success">
-                                        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAQuV3k.img?h=0&w=600&m=6&q=60&u=t&o=f&l=f" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-success text-white">Hewan</div>
-                                </div>                               
-                            </div> 
-                        </div>
-                        
-                        <div class="col-lg-3 col-12">
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100">
-                                    
-                                    <a href="https://i1.wp.com/pplh.ulm.ac.id/id/wp-content/uploads/2018/02/055862700_1505360178-takahe.jpg?fit=600%2C400" class="news-image-hover news-image-hover-primary">
-                                        <img src="https://i1.wp.com/pplh.ulm.ac.id/id/wp-content/uploads/2018/02/055862700_1505360178-takahe.jpg?fit=600%2C400" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-primary text-white">Hewan</div>
-                                </div>
-                            </div> 
-
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100" data-aos="fade-up">
-                                    
-                                    <a href="https://i1.wp.com/pplh.ulm.ac.id/id/wp-content/uploads/2018/02/055862700_1505360178-takahe.jpg?fit=600%2C400" class="news-image-hover news-image-hover-success">
-                                        <img src="https://i1.wp.com/pplh.ulm.ac.id/id/wp-content/uploads/2018/02/055862700_1505360178-takahe.jpg?fit=600%2C400" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-success text-white">Hewan</div>
-                                </div>                               
-                            </div> 
-                        </div>
-                        <div class="col-lg-3 col-12">
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100">
-                                    
-                                    <a href="https://aws-images-prod.sindonews.net/dyn/600/pena/sindo-article/original/2021/11/28/langka3%20red_panda.jpg" class="news-image-hover news-image-hover-primary">
-                                        <img src="https://cdn.idntimes.com/content-images/post/20181004/397a00a1dc1a31e5ec547a916abeb7d5_600x400.jpg" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-primary text-white">Hewan</div>
-                                </div>
-                            </div> 
-
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100" data-aos="fade-up">
-                                    
-                                    <a href="https://i1.wp.com/pplh.ulm.ac.id/id/wp-content/uploads/2018/02/055862700_1505360178-takahe.jpg?fit=600%2C400" class="news-image-hover news-image-hover-success">
-                                        <img src="https://cdn.idntimes.com/content-images/post/20181004/397a00a1dc1a31e5ec547a916abeb7d5_600x400.jpg" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-success text-white">Hewan</div>
-                                </div>                               
-                            </div> 
-                        </div>
-                        <div class="col-lg-3 col-12">
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100">
-                                    
-                                    <a href="https://aws-images-prod.sindonews.net/dyn/600/pena/sindo-article/original/2021/11/28/langka3%20red_panda.jpg" class="news-image-hover news-image-hover-primary">
-                                        <img src="https://cdn.idntimes.com/content-images/community/2021/12/03-378069e24805a3d85723f702e8b6857a-d3059c5c723078ce66036d976b3806ce_600x400.jpg" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-primary text-white">Hewan</div>
-                                </div>
-                            </div> 
-
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100" data-aos="fade-up">
-                                    
-                                    <a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAQuV3k.img?h=0&w=600&m=6&q=60&u=t&o=f&l=f" class="news-image-hover news-image-hover-success">
-                                        <img src="https://cdn.idntimes.com/content-images/community/2021/12/03-378069e24805a3d85723f702e8b6857a-d3059c5c723078ce66036d976b3806ce_600x400.jpg" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-success text-white">Hewan</div>
-                                </div> 
-                            </div>                               
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/Kz3EBdKcVNY" title="YouTube video" allowfullscreen=""></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+        <!-- End Slider Area -->
 
-            <section class=" contact section-padding" id="contact">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-lg-7 col-12 mx-auto">
-
-                            <h2 class="mb-4 text-center" data-aos="fade-up">Dont' be shy, write to us</h2>
-
-                            <form action="#" method="post" class="contact-form" role="form" data-aos="fade-up">
-
-                                <div class="row">
-                                    
-                                    <div class="col-lg-6 col-6">
-                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
-
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-                                    </div>
-
-                                    <div class="col-lg-6 col-6">
-                                        <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
-
-                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-                                    </div>
-
-                                    <div class="col-12 my-4">
-                                        <label for="message" class="form-label">How can we help?</label>
-
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tell us about the project" required></textarea>
-                                        
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label for="services" class="form-label">Services<sup class="text-danger">*</sup></label>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="checkbox1" name="checkbox1" class="form-check-input">
-
-                                            <label class="form-check-label" for="checkbox1">Branding</label>
-                                          </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12 my-2 my-lg-0">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="checkbox2" name="checkbox2" class="form-check-input">
-
-                                            <label class="form-check-label" for="checkbox2">Digital Experiences</label>
-                                          </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="checkbox3" name="checkbox3" class="form-check-input">
-
-                                            <label class="form-check-label" for="checkbox3">Web Development</label>
-                                          </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-5 col-12 mx-auto mt-5">
-                                    <button type="submit" class="form-control">Send Message</button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section class="google-map">
-                <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-
-        </main>
-
-        <footer class="site-footer">
+        <!-- Start Portfolio Area -->
+        <div class="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-12">
-                        <h5 class="text-white">
-                            <i class="bi-geo-alt-fill me-2"></i>
-                            State of Rio de Janeiro, Brazil
-                        </h5>
-
-                        <a href="mailto:info@company.com" class="custom-link mt-3 mb-5">
-                            info@company.com
-                        </a>
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Visit my portfolio and keep your feedback</span>
+                            <h2 class="title">My Portfolio</h2>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-6">
-                        < class="copyright-text mb-0">Copyright © Nomad Force 2021 
-                        
-                        <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a><br><br>
-                    
-                        Distributed By: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
-                    </p>
-                    
+                <div class="row row--25 mt--10 mt_md--10 mt_sm--10" id="myPortfolio">
+
+                </div>
+            </div>
+        </div>
+        <!-- End portfolio Area -->
+
+        <!-- Start Resume Area -->
+        <!--
+        <div class="rn-resume-area rn-section-gap section-separator" id="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">7+ Years of Experience</span>
+                            <h2 class="title">About My Skill</h2>
+                        </div>
                     </div>
+                </div>
+                <div class="skill-share-inner pt--100">
+                    <span class="title">Primary Skills on</span>
+                    <ul class="skill-share d-flex liststyle">
+                        <li><img src="assets/images/icons/icons-01.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-02.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-03.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-04.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-05.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-06.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-07.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-08.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-09.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-10.png" alt="Icons Images"></li>
+                    </ul>
+                </div>
+                <div class="skill-share-inner skill-share-inner-width margin-top-25">
+                    <span class="title">Secondary Skills on</span>
+                    <ul class="skill-share d-flex liststyle">
+                        <li><img src="assets/images/icons/icons-11.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-12.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-13.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-14.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-15.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-16.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-17.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-18.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-19.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-20.png" alt="Icons Images"></li>
+                        <li><img src="assets/images/icons/icons-21.png" alt="Icons Images"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        -->
+        <!-- End Resume Area -->
 
-                    <div class="col-lg-3 col-5 ms-auto">
-                        <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+        <!-- Start Contact section -->
+        <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Contact</span>
+                            <h2 class="title">Contact With Me</h2>
+                        </div>
+                    </div>
+                </div>
 
-                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+                <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
+                    <div class="col-lg-5">
+                        <div class="contact-about-area">
+                            <div class="thumbnail">
+                                <img src="assets/images/contact/contact1.png" alt="contact-img">
+                            </div>
+                            <div class="title-area">
+                                <h4 class="title">Fathor Rahman</h4>
+                                <span>Website Developer</span>
+                            </div>
+                            <div class="description">
+                                <p>I am available for freelance work. Connect with me via and call into my account.
+                                </p>
+                                <span class="phone">Phone: <a target="_blank"
+                                        href="https://wa.me/+6282231515788">+6282231515788</a></span>
+                                <span class="mail">Email: <a target="_blank"
+                                        href="mailto:fathorrahman2357@gmail.com">fathorrahman2357@gmail.com</a></span>
+                            </div>
+                            <div class="social-area">
+                                <div class="name">FIND WITH ME</div>
+                                <div class="social-icone">
+                                    <a href="https://www.facebook.com/fathor.rahman.23/" target="_blank"><i
+                                            data-feather="facebook"></i></a>
+                                    <a href="https://www.linkedin.com/in/fathor-rahman/" target="_blank"><i
+                                            data-feather="linkedin"></i></a>
+                                    <a href="https://www.instagram.com/ohfath_/" target="_blank"><i
+                                            data-feather="instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos-delay="600" class="col-lg-7 contact-input">
+                        <div class="contact-form-wrapper">
+                            <div class="introduce">
 
-                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-name">Your Name</label>
+                                            <input class="form-control form-control-lg" name="name" id="contact-name"
+                                                type="text" required>
+                                        </div>
+                                    </div>
 
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-phone">Phone Number</label>
+                                            <input class="form-control" name="phone" id="contact-phone" type="tel"
+                                                pattern="[0-9]{12}" required maxlength="12">
+                                        </div>
+                                    </div>
 
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-                        </ul>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-email">Email</label>
+                                            <input class="form-control form-control-sm" id="contact-email" name="email"
+                                                type="email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="subject">subject</label>
+                                            <input class="form-control form-control-sm" id="subject" name="subject"
+                                                type="text" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-message">Your Message</label>
+                                            <textarea name="message" id="contact-message" cols="30" rows="10"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button name="submit" type="submit" id="submit" class="rn-btn">
+                                            <span>SEND MESSAGE</span>
+                                            <i data-feather="arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contuct section -->
+
+        <!-- Modal Portfolio Body area Start -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail mt--10">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/portfolio/portfolio-04.jpg" alt="slide"
+                                            id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3 id="modalTitle">
+                                        <span>Featured - Design</span> App Design Development. 123
+                                    </h3>
+                                    <p class="mb--30" id="description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus
+                                        eligendi.</p>
+                                    <div class="button-group mt--20">
+                                        <a href="#" class="rn-btn" target="_blank" id="modalPlaystore">
+                                            <span>PLAY STORE</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                        <a href="#" class="rn-btn" target="_blank" id="modalAppstore">
+                                            <span>APP STORE</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- End of .text-content -->
+                            </div>
+                        </div>
+                        <!-- End of .row Body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Portfolio area -->
+
+        <!-- Modal Blog Body area Start -->
+        <div class="modal fade" id="exampleModalCenters" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-news" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
                     </div>
 
                 </div>
-            </section>
-        </footer>
+            </div>
+        </div>
+        <!-- End Modal Blog area -->
+        <!-- Back to  top Start -->
+        <div class="backto-top">
+            <div>
+                <i data-feather="arrow-up"></i>
+            </div>
+        </div>
+        <!-- Back to top end -->
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/scrollspy.min.js"></script>
-        <script src="js/custom.js"></script>
 
-    </body>
+    </main>
+    <!-- Start Footer Area -->
+    <div class="rn-footer-area rn-section-gap section-separator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-area text-center">
+
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo-vertical.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <p class="description mt--30" id="demo"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+    <!-- JS ============================================ -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- main JS -->
+    <script id="json-data" type="application/json" src="assets/js/data.json">
+        []
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+
+</body>
+
 </html>
