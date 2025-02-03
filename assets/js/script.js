@@ -4,13 +4,15 @@ document.getElementById("demo").innerHTML = "© "+year+". All rights reserved by
 
 const firestore = firebase.firestore();
 let myPortfolio = document.getElementById("myPortfolio")
-firestore.collection('/portfolio').orderBy("id", "desc").onSnapshot((querySnapshot) => {
+firestore.collection('/portfolio').onSnapshot((querySnapshot) => {
     let realtimePortfolio = querySnapshot.docs.map(doc => {
         return {
           id: doc.id,
           value: doc.data()
         }
       })
+    // short portfolio by id in object
+    realtimePortfolio.sort((a, b) => parseInt(b.value.id) - parseInt(a.value.id));
     console.log("realtimePortfolio", realtimePortfolio);
     myPortfolio.innerHTML = ''
     for (let i = 0; i < realtimePortfolio.length; i++) {
