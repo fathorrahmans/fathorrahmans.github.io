@@ -4,7 +4,7 @@ document.getElementById("demo").innerHTML = "© "+year+". All rights reserved by
 
 const firestore = firebase.firestore();
 let myPortfolio = document.getElementById("myPortfolio")
-firestore.collection('/portfolio').onSnapshot((querySnapshot) => {
+firestore.collection('/portfolio').orderBy("id", "desc").onSnapshot((querySnapshot) => {
     let realtimePortfolio = querySnapshot.docs.map(doc => {
         return {
           id: doc.id,
