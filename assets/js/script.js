@@ -13,7 +13,7 @@ firestore.collection('/portfolio').onSnapshot((querySnapshot) => {
       })
     // short portfolio by id in object
     realtimePortfolio.sort((a, b) => parseInt(b.value.id) - parseInt(a.value.id));
-    console.log("realtimePortfolio", realtimePortfolio);
+    // console.log("realtimePortfolio", realtimePortfolio);
     myPortfolio.innerHTML = ''
     for (let i = 0; i < realtimePortfolio.length; i++) {
         myPortfolio.innerHTML += `
